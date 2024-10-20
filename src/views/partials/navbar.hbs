@@ -1,0 +1,11 @@
+<nav style="display: flex; justify-content: space-between;">
+    <h1 style="font-size: 32px;">{{title}}</h1>
+    {{#if isLogin}}
+    <div style="display: flex; gap: 10px;">
+        <button class="btn" id="blog"><a href="/new">New blog</a></button>
+        <button class="btn" id="logout"><a href="/logout">Logout</a></button>
+    </div>
+    {{else}}
+    <button class="btn" id="login"><a href="/login">Login</a></button>
+    {{/if}}
+</nav>

@@ -1,7 +1,9 @@
-{{#if token}}
+<form target="_self" method="post">
+    <input type="text" placeholder="Title"  value="{{item.title}}" name="title" id="title">
+    <textarea name="content" id="content">
 
-<h1>Edit</h1>
+        {{item.content}}
 
-{{else}}
-<p id="redirect">Loading...</p>
-{{/if}}
+    </textarea>
+    <button>Submit</button>
+</form>

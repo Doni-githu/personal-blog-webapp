@@ -1,11 +1,15 @@
 <h1>Personal Blog</h1>
+{{#if data.length}}
 <div style="display: flex; flex-direction: column; gap:12px;">
     {{#each data}}
     {{#if this.id}}
     <div style="display: flex; justify-content: space-between">
-        <h1><a href="/article/{{this.id}}">{{this.title}}</a href=""></h1>
+        <h1><a href="/article/{{this.id}}">{{this.title}}</a></h1>
         <h1 style="color: grey;">{{this.publish_date}}</h1>
     </div>
     {{/if}}
     {{/each}}
 </div>
+{{else}}
+<h1 style="text-align: center;">No Data</h1>
+{{/if}}

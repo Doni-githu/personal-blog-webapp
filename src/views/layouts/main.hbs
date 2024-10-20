@@ -4,19 +4,10 @@
 {{>head}}
 
 <body>
+
+    {{>navbar}}
     {{{body}}}
 
-    <script>
-        // let pathnames = ['/admin', '/edit', "/new"]
-        // for(let i = 0; i < pathnames.length; i++) {
-        //    if(window.location.pathname ===  pathnames[i].split("/").splice(0, 2).join("/") && !sessionStorage.getItem("token")){
-        //location.assign("/login")
-        //}
-        //}
-        if (document.getElementById("redirect")) {
-            location.assign("/login")
-        }
-    </script>
 </body>
 
 </html>
